@@ -1,0 +1,47 @@
+.block{
+    width:calc(100vW / 3);
+    height:calc(100vW / 3);
+    background: #2F80ED;    
+    box-shadow: inset 0px 0px 31px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+    cursor: pointer;
+}
+.X{
+    background-color: #27AE60;
+}
+.O{
+    background-color: #9B51E0;
+}
+.zeroIcon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:calc(( 100vW / 3 ) - 60px);
+    height:calc(( 100vW / 3 ) - 60px);
+    border:4px solid white;
+    border-radius: 50%;
+}
+.crossIcon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:calc(( 100vW / 3 ) - 40px);
+    height:calc(( 100vW / 3 ) - 40px);
+}
+.crossIcon:after,
+.crossIcon::before{
+    content:'';
+    position: absolute;
+    width:4px;
+    height:100%;
+    background-color: white;
+    transform-origin: center;
+}
+.crossIcon:after{
+    transform:rotate(45deg);
+}
+.crossIcon:before{
+    transform:rotate(-45deg);
+}

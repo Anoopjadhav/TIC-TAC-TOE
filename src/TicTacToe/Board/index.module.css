@@ -1,0 +1,27 @@
+.boardWrapper{
+width:100vW;
+height:100vW;
+display: flex;
+flex-wrap: wrap;
+}
+
+.boardTurnText{
+margin:2rem 0 1rem 0;
+text-align: center;
+color:#2F80ED;
+font-size: 1rem;
+font-weight: bold;
+}
+.codeText > div:first-child{
+color:#BDBDBD;
+font-size: 1rem;
+text-align: left;
+}
+.codeText > div:last-child{
+font-size: 2rem;
+font-weight: bold;
+}
+.codeText{
+display: flex;
+margin:2rem 1rem;
+}

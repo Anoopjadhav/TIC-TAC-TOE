@@ -1,0 +1,14 @@
+.Logo{
+    font-size:24px;
+    font-weight: bold;
+    padding:2rem 0;
+}
+.Logo span:first-child{
+    color:#27AE60;
+}
+.Logo span:nth-child(2){
+    color:#2F80ED;
+}
+.Logo span:last-child{
+    color:#9B51E0;
+}

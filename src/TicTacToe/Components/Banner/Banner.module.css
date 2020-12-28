@@ -1,0 +1,48 @@
+
+.success{
+    background:#0FA34C;
+    color:white;
+    font-weight: bold;
+    font-size:1rem;
+}
+.failed{
+    background:#C60202;
+    color:white;
+    font-weight: bold;
+    font-size:1rem;
+}
+.warning{
+    background:#D6AB2B;
+    color:white;
+    font-weight: bold;
+    font-size:1rem;
+}
+
+@keyframes fly-in{
+    0%{
+        top:-52px;
+    }
+    100%{
+        top:0;
+    }
+}
+
+.Baner{
+    position:fixed;
+    left:50%;
+    transform: translateX(-50%);
+    top:-52px;
+    width:25vW;
+    padding:1rem 1rem;
+    text-align: center;
+    animation : fly-in 0.75s ease-in-out forwards;
+    z-index:10000000;
+}
+
+@media (max-width: 768px) { 
+    .Baner{
+      width:100%;
+      left:0;
+      transform: none;
+    }
+  }
